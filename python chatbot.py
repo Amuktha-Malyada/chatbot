@@ -2,10 +2,9 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# Download required NLTK data
 nltk.download('punkt')
 
-# Define pairs of patterns and corresponding responses
+
 pairs = [
     [
         r"hi|hello|hey",
@@ -49,12 +48,12 @@ pairs = [
     ]
 ]
 
-# Create a chatbot object with pattern-response pairs
+
 def chatbot():
     print("ChatBot: Hello! Type 'quit' to exit the conversation.")
     chat = Chat(pairs, reflections)
     chat.converse()
 
-# Main program to run the chatbot
+
 if __name__ == "__main__":
     chatbot()
